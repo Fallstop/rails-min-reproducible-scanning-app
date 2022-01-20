@@ -1,0 +1,3 @@
+[submodule "scanning-app"]
+	path = scanning-app
+	url = https://github.com/LilRegie/scanning-app.git
