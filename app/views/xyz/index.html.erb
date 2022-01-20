@@ -1,1 +1,38 @@
-wow
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--- I'm injected from the build process, incredible! --->
+<title>RailsMinReproducibleScanningApp</title>
+
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
+
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+<!--- I'm injected from the build process, incredible! --->
+		
+	<link rel="stylesheet" href="/xyz/_app/assets/vendor-852da979.css">
+	<link rel="modulepreload" href="/xyz/_app/start-4d5c100c.js">
+	<link rel="modulepreload" href="/xyz/_app/chunks/vendor-42ca8d80.js">
+	<link rel="modulepreload" href="/xyz/_app/chunks/singletons-a6a7384f.js">
+			<script type="module">
+				import { start } from "/xyz/_app/start-4d5c100c.js";
+				start({
+					target: document.querySelector("#svelte"),
+					paths: {"base":"/xyz","assets":"/xyz"},
+					session: {},
+					route: true,
+					spa: true,
+					trailing_slash: "never",
+					hydrate: null
+				});
+			</script>
+	</head>
+	<body>
+		<div id="svelte"></div>
+	</body>
+</html>
